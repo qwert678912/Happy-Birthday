@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Heart, ChevronLeft, ChevronRight, Cake, Stars, Music, Camera, Coffee, Gift, PartyPopper } from 'lucide-react';
-import Slideshow from './components/Slideshow.tsx';
+import Slideshow from './Slideshow.tsx';
 import image1 from './images/1old.jpg';
 import image2 from './images/2old.jpg';
 import image3 from './images/3old.jpg';
