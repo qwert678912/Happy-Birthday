@@ -2,7 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Heart, ChevronLeft, ChevronRight, Cake, Stars, Music, Camera, Coffee, Gift, PartyPopper } from 'lucide-react';
 import Slideshow from './components/Slideshow.tsx';
-
+import image1 from './images/1old.jpg';
+import image2 from './images/2old.jpg';
+import image3 from './images/3old.jpg';
+import image4 from './images/4old.jpg';
+import image5 from './images/5old.jpg';
 interface Slide {
   date: string;
   message: string;
@@ -39,32 +43,32 @@ const priyuAge = calculateAge(new Date(2004, 0, 24));
 const slides: Slide[] = [
   {
     date: 'January 24, 2004',
-    message: `A star was born ✨ The day the world became brighter with Priyu's arrival`,
-    imageUrl: 'https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?auto=format&fit=crop&q=80',
+    message: `Aaj ke din ik sitara paida hua tha✨. Aaj ke hi din se duniya me nayi chamak aayi♥✨`,
+    imageUrl:image1 ,
     icon: <Stars className="text-yellow-400" />
   },
   {
-    date: 'When we first met',
-    message: 'The moment our eyes met, my heart knew it found its home',
-    imageUrl: 'https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&q=80',
+    date: 'Woo',
+    message: 'Uski aankhein haye ky jaadu hai✨♥apni taraf kheech leti hai mujhe🫣✨',
+    imageUrl: image3,
     icon: <Heart className="text-pink-500" />
   },
   {
-    date: 'Our first coffee date',
-    message: 'Sipping coffee together, watching time stand still',
-    imageUrl: 'https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&q=80',
-    icon: <Coffee className="text-brown-600" />
+    date: 'Her Smile',
+    message: 'The smile of her🥺✨ she will never know how it makes my day✨♥',
+    imageUrl: image2,
+    icon: <Stars className="text-yellow-400" />
   },
   {
-    date: 'Our first picture together',
-    message: 'Capturing moments, creating memories that last forever',
-    imageUrl: 'https://images.unsplash.com/photo-1522827489705-0616731a52a8?auto=format&fit=crop&q=80',
+    date: 'Beautiful',
+    message: 'Uske looks🫣✨yakeen manoo yrr chand bhi nhi itna khubsurat hai✨♥',
+    imageUrl: image4,
     icon: <Camera className="text-blue-500" />
   },
   {
-    date: 'Today',
-    message: `Happy ${priyuAge}th Birthday, Priyu! 🎂\nEvery moment with you is a blessing. Here's to many more years of love, laughter, and adventures together! ❤️`,
-    imageUrl: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80',
+    date: 'subhdin',
+    message: `Happy happy wala birthday aapko🥺🥳🥳♥♥ apake jindagi\n me sb ho joo chiye aapko Everything u want ...Aap se hai hum hai ✨ जन्मदिन की ढेरों बधाई आपको मेरी dhadkan✨`,
+    imageUrl: image5,
     icon: <Cake className="text-pink-500" />
   }
 ];
@@ -168,36 +172,20 @@ function HomePage() {
     return (
       <div className="min-h-screen bg-gradient-to-br from-pink-100 via-purple-100 to-blue-100 flex flex-col items-center justify-center p-4">
         <div className="text-center animate-fade-in">
-          <h1 className="text-6xl font-bold text-pink-500 mb-4">Happy Birthday Priyu! 🎉</h1>
-          <p className="text-2xl text-gray-700">Click anywhere to start your birthday journey...</p>
+          <h1 className="text-6xl font-bold text-pink-500 mb-4">Happy Birthday Priyu ❤️🎉</h1>
+          <p className="text-2xl text-gray-700">Kahi bhi click krdo</p>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-pink-100 via-purple-100 to-blue-100 flex flex-col items-center justify-center p-4">
+    <div className="min-h-screen  bg-gradient-to-br from-pink-100 via-purple-100 to-blue-100 flex flex-col items-center justify-center p-8">
       {/* Countdown Timer */}
-      <div className="fixed top-4 left-4 bg-white/80 backdrop-blur-sm rounded-lg p-4 shadow-lg">
-        <h3 className="text-lg font-semibold text-pink-500 mb-2">Next Birthday In:</h3>
-        <div className="grid grid-cols-4 gap-2 text-center">
-          <div>
-            <span className="block text-2xl font-bold">{timeUntilBirthday.days}</span>
-            <span className="text-sm">Days</span>
-          </div>
-          <div>
-            <span className="block text-2xl font-bold">{timeUntilBirthday.hours}</span>
-            <span className="text-sm">Hours</span>
-          </div>
-          <div>
-            <span className="block text-2xl font-bold">{timeUntilBirthday.minutes}</span>
-            <span className="text-sm">Mins</span>
-          </div>
-          <div>
-            <span className="block text-2xl font-bold">{timeUntilBirthday.seconds}</span>
-            <span className="text-sm">Secs</span>
-          </div>
-        </div>
+      <div className="fixed w-100 top-4 left-4 bg-white/80 backdrop-blur-sm rounded-lg p-4 shadow-lg">
+        <h3 className="text-lg font-semibold text-pink-500 mb-2">Happy Birthday Priyu <Heart className="text-pink-500" /></h3>
+        
+      
       </div>
       
       <div className="w-full max-w-md relative">
@@ -278,7 +266,7 @@ function HomePage() {
             onClick={toggleMusic}
             className="p-3 bg-white rounded-full shadow-lg hover:bg-pink-50 transition-colors"
           >
-            <Music className={`${isPlaying ? 'text-pink-500' : 'text-gray-400'}`} size={24} />
+            <Cake className={`${isPlaying ? 'text-pink-500' : 'text-gray-400'}`} size={24} />
           </button>
           <button
             onClick={() => setShowCard(true)}
@@ -295,7 +283,7 @@ function HomePage() {
         className="mt-6 px-6 py-3 bg-pink-500 text-white rounded-full font-semibold shadow-lg hover:bg-pink-600 transition-colors flex items-center gap-2"
       >
         <PartyPopper size={20} />
-        Click Here to Celebrate!
+        Yha click kro!
       </button>
 
       {/* Birthday Card Modal */}
@@ -308,17 +296,19 @@ function HomePage() {
                 className="w-full h-64 bg-pink-100 rounded-lg flex items-center justify-center hover:bg-pink-200 transition-colors"
               >
                 <Gift size={48} className="text-pink-500" />
-                <span className="ml-2 text-lg font-semibold">Click to unwrap your special message!</span>
+                <span className="ml-2 text-lg font-semibold">Ik baar or click!</span>
               </button>
             ) : (
               <div className="text-center">
-                <h2 className="text-2xl font-bold text-pink-500 mb-4">Dear Priyu,</h2>
+                <h2 className="text-2xl font-bold text-pink-500 mb-4">मेरी प्रियतम...
+                </h2>
                 <p className="text-gray-700 mb-4">
-                  On your special day, I want you to know how much joy and happiness you bring to my life.
-                  Your smile lights up my world, and your love makes every day beautiful.
-                  Here's to celebrating you, not just today, but every single day.
+                आज इस शुभदिन पर हम तुमको ये बताना चाहते हैं कि हम कितने खुश हैं जो खुशी तुम मेरी जिंदगी में रोज़ लाती हो✨🥺।
+आपकी मुस्कान मेरी रातों में रोशनी भर देती है और आपका प्यार हमारा दिन खूबसूरत हो जाता है...
+आपके होने से आज ही नहीं, रोज़ celebrations है 🥺♥।
+
                 </p>
-                <p className="text-xl font-semibold text-pink-500">Happy Birthday, my love! ❤️</p>
+                <p className="text-xl font-semibold text-pink-500">Happy Birthday, my Betterhalf❤️</p>
                 <button
                   onClick={() => setShowCard(false)}
                   className="mt-4 px-4 py-2 bg-pink-500 text-white rounded-full hover:bg-pink-600 transition-colors"

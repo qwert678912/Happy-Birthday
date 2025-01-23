@@ -1,19 +1,31 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
-
+import image1 from '../images/slide1.jpg';
+import image2 from '../images/slide2.jpg';
+import image3 from '../images/slide3.jpg';
+import image4 from '../images/slide4.jpg';
+import last from '../images/lastslide.png';
 const defaultSlides = [
   {
-    imageUrl: 'https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&q=80',
-    caption: 'Beautiful Memories Together'
+    imageUrl:image1,
+    caption: 'तेरी हंसी में छुपी है जादू की कहानी'
   },
   {
-    imageUrl: 'https://images.unsplash.com/photo-1522827489705-0616731a52a8?auto=format&fit=crop&q=80',
-    caption: 'Special Moments'
+    imageUrl: image4,
+    caption: 'तेरे बिना अधूरी लगती है ज़िंदगानी।'
   },
   {
-    imageUrl: 'https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&q=80',
-    caption: 'Celebrating You'
+    imageUrl: image3,
+    caption: 'तेरा साथ है मेरे दिल की धड़कन'
+  },
+  {
+    imageUrl: image2,
+    caption: 'तेरे बिना अधूरी सी लगती है धड़कन।'
+  },
+  {
+    imageUrl: last,
+    caption: ''
   }
 ];
 
