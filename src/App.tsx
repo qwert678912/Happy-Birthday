@@ -278,13 +278,7 @@ function HomePage() {
       </div>
 
       {/* Celebrate Button */}
-      <button
-        onClick={handleCelebrate}
-        className="mt-6 px-6 py-3 bg-pink-500 text-white rounded-full font-semibold shadow-lg hover:bg-pink-600 transition-colors flex items-center gap-2"
-      >
-        <PartyPopper size={20} />
-        Yha click kro!
-      </button>
+     
 
       {/* Birthday Card Modal */}
       {showCard && (
