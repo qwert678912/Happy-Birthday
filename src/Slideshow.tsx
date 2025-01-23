@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import image1 from '../images/slide1.jpg';
-import image2 from '../images/slide2.jpg';
-import image3 from '../images/slide3.jpg';
-import image4 from '../images/slide4.jpg';
-import last from '../images/lastslide.png';
+import image1 from './images/slide1.jpg';
+import image2 from './images/slide2.jpg';
+import image3 from './images/slide3.jpg';
+import image4 from './images/slide4.jpg';
+import last from './images/lastslide.png';
 const defaultSlides = [
   {
     imageUrl:image1,
