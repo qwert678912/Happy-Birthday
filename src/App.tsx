@@ -346,7 +346,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
-     <Route path="/Slideshow" element={<Navigate to="https://qwert678192.github.io/bi/" replace />} />
+     <Route path="/Slideshow" element={<Navigate to="https://qwert678192.github.io/bir" replace />} />
     </Routes>
   );
 }
